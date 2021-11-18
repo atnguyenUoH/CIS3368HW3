@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div>
+            <form action="/process_form" method="post">
+                <h1>SuperHero Search Engine</h1>
+                <p>Welcome to the Super Hero Search Engine</p>
+                <div class="form-group">
+                    <label for="exampleInput" class="form-label">Hero Search:</label>
+                    <input type="text" id="inputname" name="inputname" class="form-control" placeholder="Input name here" required
+                    autofocus>
+                </div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
